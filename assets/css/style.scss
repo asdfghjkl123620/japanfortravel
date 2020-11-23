@@ -1,0 +1,800 @@
+$color1:#fff;
+$mainColor:rgb(246, 212, 57);
+$subColor:rgb(248, 97, 97);
+p {
+    line-height: 1.4;
+    color: #333;
+    font-size: 400;
+    font-family:  "黑體-繁","微軟正黑體","Raleway", Helvetica, Arial, sans-serif;
+  }
+  
+  h1 {
+    font-size: 3.875em;
+  }
+  
+  h2 {
+    font-size: 1.875em;
+    margin-bottom: 4em;
+  }
+  
+  h3 {
+    font-size: 1.5em;
+  }
+  
+  h4 {
+    font-size: 1.125em;
+  }
+  
+  section{
+      padding: 5.3125em 0;
+  }
+//hero section
+.hero {
+    display: table;
+    position: relative;
+    background-image: url("https://images.unsplash.com/photo-1480796927426-f609979314bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+    background-size: cover;
+    padding: 10em 0;
+    color: $color1;
+    width: 100%;
+    height: 100vh;
+
+    &:after {
+        content:"";
+        z-index: 0;
+        position: absolute;
+        background: $mainColor;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    .container{
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+    }
+
+
+}
+.hero-brand{
+    margin-bottom: 5em;
+    display: inline-block;
+   
+    &:hover {
+        opacity: .65;
+    }
+
+}
+.bg {
+    background-image: url("https://images.unsplash.com/photo-1504416285472-eccf03dd31eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    
+}
+@media (max-width:768px) {
+    .hero-brand{
+        img{
+            max-width: 768px;
+            }
+    
+    }
+
+    
+}
+.textLine{
+    font-family: "黑體-繁","微軟正黑體","Raleway", Helvetica, Arial, sans-serif;
+    font-size: 1.625em;
+    margin: 2.8125em 0 4.6875em 0;
+    color: $color1;
+}
+
+@media (max-width: 61.9em) {
+    .hero {
+        padding: 4.6875em 0;
+      }
+    .hero-brand {
+        margin-bottom: 2.1875em;
+      }
+      .textLine{
+        margin: 2.1875em 0;
+      }
+}
+//hero section
+
+//header area
+#header {
+    background-color: $subColor;
+    height: 5em;
+    #logo{
+        margin: 1em 1.5625em 0 0;
+        a{
+            color:$color1;   
+            &:hover{
+                color:$color1;   
+            }
+        }
+    
+        img{
+            padding: 0;
+            margin: 0;
+            max-height: 2.5em;
+        }
+    }
+
+    .socialNav{
+        margin-top: 1em;
+
+        a {
+            font-size: 1.5em;
+            margin-left: 1em;
+            color: $color1;
+
+            &:hover {
+                color: $color1; 
+            }
+          }
+    }
+
+}
+ 
+
+@media (max-width:768px) {
+    #header {
+        height: 3.125em;
+
+        #logo {
+            margin: 0.625em 0 0 0;
+            img {
+                max-height: 2em;
+              }
+          }
+    }
+    
+}
+
+//Nav Menu
+.navbar-custom{
+    background-color: $subColor;
+}
+#navText {
+    
+        li {
+            a {
+                color:$color1;
+            }
+        }
+ 
+}
+.logoContainer{
+    img {
+        width: 100%;
+        max-height: 5em;
+     }
+} 
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+  .custom-toggler.navbar-toggler {
+    border-color: $color1;
+  } 
+
+
+//Nav Menu
+
+
+
+
+//header area
+
+
+//main
+main{
+    .welcome {
+        .bgLeft{
+            background-image: url("https://images.unsplash.com/photo-1533050487297-09b450131914?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height:50em;
+        }
+        .bgRight{
+            background-image: url("https://images.unsplash.com/photo-1531219572328-a0171b4448a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 50em;
+        }
+    }
+}
+//Circle area
+#sectCircle{
+    background-image: url("https://images.unsplash.com/photo-1494515426402-f1980ace7a9c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    background-size: cover;
+    h2,p {
+        color:$color1;     
+    }
+    p{
+        font-size: 2em;
+    }
+}
+
+.statusRow {
+    margin-top: 4em;
+}
+
+.statusCul{
+    .circleCal {
+        display: inline-block;
+        width: 10em;
+        height: 10em;
+        font-family: "黑體-繁","微軟正黑體","Raleway", Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        color: rgb(246, 246, 246);
+        background-color: rgb(122, 155, 245);
+        border: 6px solid #f66552;
+        border-radius: 50%;
+        padding:3.4375em 1.5625em 0 1.5625em ;
+        position: relative;
+
+        .statusNo{
+            color:$color1;
+            width: 5em;
+            height: 5em;
+            line-height: 5em;
+            top: -1.5625em;
+            right: -0.9375em;
+            font-family: "黑體-繁","微軟正黑體","Raleway", Helvetica, Arial, sans-serif;
+            font-size: 1.125em;
+            background-color: #ff8d50;
+            position: absolute;
+            border-radius: 50%;
+            font-weight: 700;
+        }
+    }
+} 
+
+//Circle area
+
+
+//Features
+.features {
+    padding-bottom: 2.8125em;
+    h2 {
+        color: #b80e39;
+      }
+      .featureCul{
+        padding-bottom: 2.8125em;
+
+      }
+  }
+  @media (max-width: 61.9em) {
+    .features {
+        padding-bottom: 0.3125em;
+      }
+
+
+      .featureCul{
+          padding-bottom: 2em;
+      }
+  }
+//Features
+
+//Action
+.cta {
+    background-color: $mainColor;
+    padding: 1.5625em 0;
+    h2{
+        margin-bottom: 0.3125em;
+    }
+    p{
+        margin-bottom: 0;
+        opacity: .75;
+    }
+    h2,p {
+        color: $color1;
+    }
+    .btn-ghost {
+        position: relative;
+        top: 13px;
+      }
+}
+
+//Action
+
+
+//  Portfolio Styling
+.portfolio {
+    background-color:  $color1;
+    padding-bottom: 0;
+    h2 {
+        color: $mainColor;
+        margin-bottom: 1.5625em;
+    }
+}
+.portfolioGrid {
+    margin-top: 4em;
+    .row {
+        margin: 0;
+        >div{
+            padding: 0;
+            .card{
+                img{
+                    width: 100%;
+                }
+                &:hover {
+                    .portfolioOver{
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+                .portfolioOver{
+                    position: absolute;
+                    display: table-cell;
+                    vertical-align: middle;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.8);
+                    top: 0;
+                    left: 0;
+                    text-align: center;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all .3s ease;
+
+                    > div {
+                        position: relative;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                    
+                    .cardTitle {
+                        color: $color1;
+                        font-size: 2em;
+                    }
+
+                    .cardText {
+                        color: $color1;
+                        opacity: .75;
+                        padding: 0 2.8125em;
+                    }
+
+           
+                }
+            }
+        }
+    }
+}
+
+//  Portfolio Styling
+//main
+
+// .imageRow {
+//     display: flex;
+//     .imageContainer {
+//         width: 100%;
+//         position: relative;
+//         p{
+//             position: absolute;
+//             top: 50%;
+//             left: 50%;
+//             transform: translate(-50%, -50%);
+//             color: white;
+//             font-size: 24px;
+//             font-weight: bold;
+//             margin: 0;
+//         }
+//         img{
+//             max-width: 48.21875em;
+//             height:  auto;
+//         }
+//     }
+// }
+// .pictureBg{
+//     img{
+
+//     }
+// }
+
+//team section
+.team {
+    h2 {
+        color:$subColor;
+    }
+    .col-sm-3 {
+        padding: 0;
+    }
+
+    .card {
+        >a{
+            display: block;
+        }
+
+        img.card-img-top{
+            max-width: 100%;
+            width: 100%;
+            height: 15vw;
+            object-fit: cover;
+        }
+
+
+        h4 {
+            color: $color1;
+            text-transform: uppercase;  
+        }
+
+        p {
+            font-size: 0.8em;
+            color: $color1;
+            opacity: .75;
+            margin: 0;
+            padding: 0 2em;
+        }
+
+        .socialNav {
+            margin-bottom: 3em;
+
+            a{
+                color: $color1;
+                font-size: 1em;
+                margin: 0 0.25em;
+
+                &:hover {
+                    opacity: .75;
+                }
+            }
+        }
+
+
+        &:hover{
+            .card-title-wrap {
+                background-color: #199EB8;
+              }
+              .card-title-wrap .card-title,
+              .card-title-wrap .card-text {
+                color: $color1;
+              }
+            
+              .teamOver {
+                  opacity: 1;
+                  visibility: visible;  
+              }
+        }
+    }
+
+
+    .teamOver {
+        padding: 3em;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        top: 0;
+        left: 0;
+        text-align: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s ease;
+    }
+
+    .card-title-wrap {
+        padding: 1em 1.5625em;
+        position: relative;
+        z-index: 9;
+        background-color: $color1;
+
+        .card-title {
+            font-size: 1.5em;
+            color: #333;
+          }
+
+          .card-text {
+            font-size:1.125em;
+            color: #999;
+          }
+    }
+
+    .card-title-wrap .card-title,
+    .card-title-wrap .card-text {
+        font-family:  "黑體-繁","微軟正黑體","Raleway", Helvetica, Arial, sans-serif;
+        display: block;
+        margin: 0;
+    }
+}
+
+//team section
+
+
+//contact section
+#contact {
+    background:$color1;
+    padding: 5em 0;
+}
+
+#contact{
+    h2{
+        font-family: "Raleway", Helvetica, Arial, sans-serif;
+        color: $subColor;  
+    }
+
+    .info{
+
+
+        p{
+            padding: 0 0 0.625em 3em;
+            line-height: 1.5;
+        }
+    } 
+
+    #info {
+        div{
+            img.iconContact {
+                max-width: 1em;
+                width: 100%;
+                height: 15vw;
+                object-fit: cover;
+                float: left;
+            }
+    
+        }
+    }
+
+    .php-email-form{
+        .validate {
+            display: none;
+            color:$subColor;
+            margin: 0 0 1em 0;
+            font-weight: 400;
+            font-size: 1.2308em;
+        }
+
+        .error-message {
+            display: none;
+            color: $color1;
+            background: rgb(255, 102, 1);
+            text-align: left;
+            padding: 1em;
+            font-weight: 600;
+
+            br + br {
+                margin-top: 1.5625em;
+            }
+        }
+
+        .sent-message {
+            display: none;
+            color: $color1;
+            background: #18d26e;
+            text-align: center;
+            padding: 1em;
+            font-weight: 600;
+        }
+
+        .loading {
+            display: none;
+            background: $color1;
+            text-align: center;
+            padding: 1em;
+
+            &:before {
+                content: "";
+                display: inline-block;
+                border-radius: 50%;
+                width: 1.5em;
+                height: 1.5em;
+                margin: 0 0.625em 0.375em 0;
+                border: 3px solid #18d26e;
+                border-top-color: #eee;
+                -webkit-animation: animate-loading 1s linear infinite;
+                animation: animate-loading 1s linear infinite;
+            }
+        }
+
+        .php-email-form input, #contact .php-email-form textarea {
+            border-radius: 0;
+            box-shadow: none;
+        }
+
+        .php-email-form input::focus, #contact .php-email-form textarea::focus {
+            background-color: #199EB8;
+          }
+
+
+          .php-email-form button[type="submit"] {
+            background: #199EB8;
+            border: 0;
+            padding: 10px 24px;
+            color: #fff;
+            transition: 0.4s;
+
+            &:hover {
+                background: #23c2e1;
+            }
+          }
+
+
+          @-webkit-keyframes animate-loading {
+            0% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+          
+          @keyframes animate-loading {
+            0% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+    }
+}
+
+
+//contact section
+
+//Footer
+
+.siteFooter {
+    background-color: $mainColor;
+    padding: 0;
+
+    h2, p{
+        color: $color1;
+        
+    }
+    p{
+        opacity: 0.75;
+        line-height: 2.0925;
+    }
+
+    h2 , .btn{
+        margin-bottom: 1.5625em;
+    }
+    .socialNav {
+        a{
+            color: $color1;
+            opacity: .25;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    .bottom {
+        background-color: rgb(0, 0, 0);
+        padding: 1.25em 0;
+        .listInline{
+            position: relative;
+            top:0.3125em ;
+
+            a {
+                color: $color1;
+                font-family: "Roboto", Helvetica, Arial, sans-serif;
+                margin-right: 0.9375em;
+
+                &:hover {
+                    color:$mainColor;
+                }
+            }
+        }
+        .listInline , p {
+            margin: 0;
+        }
+    }
+
+    .credits {
+        color:#ddd;
+
+        a{
+            color:$mainColor;
+        }
+    }
+}
+
+
+//Footer
+
+//元素
+.btn{
+    background-color: rgb(248, 87, 87);
+    font-family: "黑體-繁","微軟正黑體","Raleway", Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    color:$color1;
+    padding: 1em 2.8125em;
+    border-radius: 2em;
+
+    &:hover {
+        background-color: rgb(49, 136, 107);
+        color:$color1;
+    }
+    &:focus {
+        color:$color1;
+    }
+}
+
+.scrolltop {
+    display: none;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    width: 2.625em;
+    height: 2.625em;
+    border-radius: 50%;
+    background: rgb(255, 102, 0);
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+
+}
+.scrolltop:hover, .scrolltop:active, .scrolltop:focus {
+    color: #fff !important;
+    opacity: .75;
+  }
+
+
+  @media(max-width: 61.9em) {
+    p,
+    .block p {
+      margin: 0;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin: 0;
+      }
+      h2,
+      .tagline {
+        font-size: 1.5em;
+      }
+      h2 {
+        margin-bottom: 1.5625em;
+      }
+      h3 {
+        font-size:0.875em;
+      }
+      .statusCul {
+          margin-bottom: 1.5625em;
+      }
+      .block {
+        height: auto;
+      }
+
+     
+        .portfolioGrid {
+            .card{
+                h3.card-title {
+                    font-size: 1.125em !important;
+                  }
+
+                  .card-text {
+                    font-size: 0.8125em;
+                  }
+
+            }
+        } 
+        
+        .team {
+            .teamOver{
+                padding-top: 1.25em;
+            }
+
+            .card {
+                .socialNav {
+                    margin-bottom: 0.9375em;
+                    padding: 0;
+                }
+            }
+
+        }
+    
+  }
+  

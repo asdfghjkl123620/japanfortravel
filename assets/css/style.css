@@ -1,0 +1,695 @@
+@charset "UTF-8";
+p {
+  line-height: 1.4;
+  color: #333;
+  font-size: 400;
+  font-family: "黑體-繁","微軟正黑體","Raleway", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 3.875em;
+}
+
+h2 {
+  font-size: 1.875em;
+  margin-bottom: 4em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.125em;
+}
+
+section {
+  padding: 5.3125em 0;
+}
+
+.hero {
+  display: table;
+  position: relative;
+  background-image: url("https://images.unsplash.com/photo-1480796927426-f609979314bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  background-size: cover;
+  padding: 10em 0;
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero:after {
+  content: "";
+  z-index: 0;
+  position: absolute;
+  background: #f6d439;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.hero-brand {
+  margin-bottom: 5em;
+  display: inline-block;
+}
+
+.hero-brand:hover {
+  opacity: .65;
+}
+
+.bg {
+  background-image: url("https://images.unsplash.com/photo-1504416285472-eccf03dd31eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
+@media (max-width: 768px) {
+  .hero-brand img {
+    max-width: 768px;
+  }
+}
+
+.textLine {
+  font-family: "黑體-繁","微軟正黑體","Raleway", Helvetica, Arial, sans-serif;
+  font-size: 1.625em;
+  margin: 2.8125em 0 4.6875em 0;
+  color: #fff;
+}
+
+@media (max-width: 61.9em) {
+  .hero {
+    padding: 4.6875em 0;
+  }
+  .hero-brand {
+    margin-bottom: 2.1875em;
+  }
+  .textLine {
+    margin: 2.1875em 0;
+  }
+}
+
+#header {
+  background-color: #f86161;
+  height: 5em;
+}
+
+#header #logo {
+  margin: 1em 1.5625em 0 0;
+}
+
+#header #logo a {
+  color: #fff;
+}
+
+#header #logo a:hover {
+  color: #fff;
+}
+
+#header #logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 2.5em;
+}
+
+#header .socialNav {
+  margin-top: 1em;
+}
+
+#header .socialNav a {
+  font-size: 1.5em;
+  margin-left: 1em;
+  color: #fff;
+}
+
+#header .socialNav a:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #header {
+    height: 3.125em;
+  }
+  #header #logo {
+    margin: 0.625em 0 0 0;
+  }
+  #header #logo img {
+    max-height: 2em;
+  }
+}
+
+.navbar-custom {
+  background-color: #f86161;
+}
+
+#navText li a {
+  color: #fff;
+}
+
+.logoContainer img {
+  width: 100%;
+  max-height: 5em;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: #fff;
+}
+
+main .welcome .bgLeft {
+  background-image: url("https://images.unsplash.com/photo-1533050487297-09b450131914?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50em;
+}
+
+main .welcome .bgRight {
+  background-image: url("https://images.unsplash.com/photo-1531219572328-a0171b4448a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50em;
+}
+
+#sectCircle {
+  background-image: url("https://images.unsplash.com/photo-1494515426402-f1980ace7a9c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  background-size: cover;
+}
+
+#sectCircle h2, #sectCircle p {
+  color: #fff;
+}
+
+#sectCircle p {
+  font-size: 2em;
+}
+
+.statusRow {
+  margin-top: 4em;
+}
+
+.statusCul .circleCal {
+  display: inline-block;
+  width: 10em;
+  height: 10em;
+  font-family: "黑體-繁","微軟正黑體","Raleway", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  color: #f6f6f6;
+  background-color: #7a9bf5;
+  border: 6px solid #f66552;
+  border-radius: 50%;
+  padding: 3.4375em 1.5625em 0 1.5625em;
+  position: relative;
+}
+
+.statusCul .circleCal .statusNo {
+  color: #fff;
+  width: 5em;
+  height: 5em;
+  line-height: 5em;
+  top: -1.5625em;
+  right: -0.9375em;
+  font-family: "黑體-繁","微軟正黑體","Raleway", Helvetica, Arial, sans-serif;
+  font-size: 1.125em;
+  background-color: #ff8d50;
+  position: absolute;
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+.features {
+  padding-bottom: 2.8125em;
+}
+
+.features h2 {
+  color: #b80e39;
+}
+
+.features .featureCul {
+  padding-bottom: 2.8125em;
+}
+
+@media (max-width: 61.9em) {
+  .features {
+    padding-bottom: 0.3125em;
+  }
+  .featureCul {
+    padding-bottom: 2em;
+  }
+}
+
+.cta {
+  background-color: #f6d439;
+  padding: 1.5625em 0;
+}
+
+.cta h2 {
+  margin-bottom: 0.3125em;
+}
+
+.cta p {
+  margin-bottom: 0;
+  opacity: .75;
+}
+
+.cta h2, .cta p {
+  color: #fff;
+}
+
+.cta .btn-ghost {
+  position: relative;
+  top: 13px;
+}
+
+.portfolio {
+  background-color: #fff;
+  padding-bottom: 0;
+}
+
+.portfolio h2 {
+  color: #f6d439;
+  margin-bottom: 1.5625em;
+}
+
+.portfolioGrid {
+  margin-top: 4em;
+}
+
+.portfolioGrid .row {
+  margin: 0;
+}
+
+.portfolioGrid .row > div {
+  padding: 0;
+}
+
+.portfolioGrid .row > div .card img {
+  width: 100%;
+}
+
+.portfolioGrid .row > div .card:hover .portfolioOver {
+  opacity: 1;
+  visibility: visible;
+}
+
+.portfolioGrid .row > div .card .portfolioOver {
+  position: absolute;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.portfolioGrid .row > div .card .portfolioOver > div {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.portfolioGrid .row > div .card .portfolioOver .cardTitle {
+  color: #fff;
+  font-size: 2em;
+}
+
+.portfolioGrid .row > div .card .portfolioOver .cardText {
+  color: #fff;
+  opacity: .75;
+  padding: 0 2.8125em;
+}
+
+.team h2 {
+  color: #f86161;
+}
+
+.team .col-sm-3 {
+  padding: 0;
+}
+
+.team .card > a {
+  display: block;
+}
+
+.team .card img.card-img-top {
+  max-width: 100%;
+  width: 100%;
+  height: 15vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.team .card h4 {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.team .card p {
+  font-size: 0.8em;
+  color: #fff;
+  opacity: .75;
+  margin: 0;
+  padding: 0 2em;
+}
+
+.team .card .socialNav {
+  margin-bottom: 3em;
+}
+
+.team .card .socialNav a {
+  color: #fff;
+  font-size: 1em;
+  margin: 0 0.25em;
+}
+
+.team .card .socialNav a:hover {
+  opacity: .75;
+}
+
+.team .card:hover .card-title-wrap {
+  background-color: #199EB8;
+}
+
+.team .card:hover .card-title-wrap .card-title,
+.team .card:hover .card-title-wrap .card-text {
+  color: #fff;
+}
+
+.team .card:hover .teamOver {
+  opacity: 1;
+  visibility: visible;
+}
+
+.team .teamOver {
+  padding: 3em;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  top: 0;
+  left: 0;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.team .card-title-wrap {
+  padding: 1em 1.5625em;
+  position: relative;
+  z-index: 9;
+  background-color: #fff;
+}
+
+.team .card-title-wrap .card-title {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.team .card-title-wrap .card-text {
+  font-size: 1.125em;
+  color: #999;
+}
+
+.team .card-title-wrap .card-title,
+.team .card-title-wrap .card-text {
+  font-family: "黑體-繁","微軟正黑體","Raleway", Helvetica, Arial, sans-serif;
+  display: block;
+  margin: 0;
+}
+
+#contact {
+  background: #fff;
+  padding: 5em 0;
+}
+
+#contact h2 {
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  color: #f86161;
+}
+
+#contact .info p {
+  padding: 0 0 0.625em 3em;
+  line-height: 1.5;
+}
+
+#contact #info div img.iconContact {
+  max-width: 1em;
+  width: 100%;
+  height: 15vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  float: left;
+}
+
+#contact .php-email-form .validate {
+  display: none;
+  color: #f86161;
+  margin: 0 0 1em 0;
+  font-weight: 400;
+  font-size: 1.2308em;
+}
+
+#contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ff6601;
+  text-align: left;
+  padding: 1em;
+  font-weight: 600;
+}
+
+#contact .php-email-form .error-message br + br {
+  margin-top: 1.5625em;
+}
+
+#contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 1em;
+  font-weight: 600;
+}
+
+#contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 1em;
+}
+
+#contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  margin: 0 0.625em 0.375em 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+#contact .php-email-form .php-email-form input, #contact .php-email-form #contact .php-email-form textarea {
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#contact .php-email-form .php-email-form input::focus, #contact .php-email-form #contact .php-email-form textarea::focus {
+  background-color: #199EB8;
+}
+
+#contact .php-email-form .php-email-form button[type="submit"] {
+  background: #199EB8;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#contact .php-email-form .php-email-form button[type="submit"]:hover {
+  background: #23c2e1;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.siteFooter {
+  background-color: #f6d439;
+  padding: 0;
+}
+
+.siteFooter h2, .siteFooter p {
+  color: #fff;
+}
+
+.siteFooter p {
+  opacity: 0.75;
+  line-height: 2.0925;
+}
+
+.siteFooter h2, .siteFooter .btn {
+  margin-bottom: 1.5625em;
+}
+
+.siteFooter .socialNav a {
+  color: #fff;
+  opacity: .25;
+}
+
+.siteFooter .socialNav a:hover {
+  opacity: 1;
+}
+
+.siteFooter .bottom {
+  background-color: black;
+  padding: 1.25em 0;
+}
+
+.siteFooter .bottom .listInline {
+  position: relative;
+  top: 0.3125em;
+}
+
+.siteFooter .bottom .listInline a {
+  color: #fff;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  margin-right: 0.9375em;
+}
+
+.siteFooter .bottom .listInline a:hover {
+  color: #f6d439;
+}
+
+.siteFooter .bottom .listInline, .siteFooter .bottom p {
+  margin: 0;
+}
+
+.siteFooter .credits {
+  color: #ddd;
+}
+
+.siteFooter .credits a {
+  color: #f6d439;
+}
+
+.btn {
+  background-color: #f85757;
+  font-family: "黑體-繁","微軟正黑體","Raleway", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  color: #fff;
+  padding: 1em 2.8125em;
+  border-radius: 2em;
+}
+
+.btn:hover {
+  background-color: #31886b;
+  color: #fff;
+}
+
+.btn:focus {
+  color: #fff;
+}
+
+.scrolltop {
+  display: none;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  width: 2.625em;
+  height: 2.625em;
+  border-radius: 50%;
+  background: #ff6600;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.scrolltop:hover, .scrolltop:active, .scrolltop:focus {
+  color: #fff !important;
+  opacity: .75;
+}
+
+@media (max-width: 61.9em) {
+  p,
+  .block p {
+    margin: 0;
+  }
+  h1 {
+    font-size: 2em;
+    margin: 0;
+  }
+  h2,
+  .tagline {
+    font-size: 1.5em;
+  }
+  h2 {
+    margin-bottom: 1.5625em;
+  }
+  h3 {
+    font-size: 0.875em;
+  }
+  .statusCul {
+    margin-bottom: 1.5625em;
+  }
+  .block {
+    height: auto;
+  }
+  .portfolioGrid .card h3.card-title {
+    font-size: 1.125em !important;
+  }
+  .portfolioGrid .card .card-text {
+    font-size: 0.8125em;
+  }
+  .team .teamOver {
+    padding-top: 1.25em;
+  }
+  .team .card .socialNav {
+    margin-bottom: 0.9375em;
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
